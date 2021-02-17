@@ -41,6 +41,7 @@ jobs:
 
   upload-data-job:
     name: Upload data to artifact
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Upload hello world file
