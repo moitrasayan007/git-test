@@ -32,16 +32,16 @@ jobs:
     - run: npm run linter
     - run: npm test
 
-    - name: Upload hello world file
+    - name: Upload file
       uses: actions/upload-artifact@v1
       with:
         name: logs
         path: test-results/test.html
 
-    - name: Download hello world file
+    - name: Download file
       uses: actions/download-artifact@v1
       with:
-        name: hello-world
+        name: test-results/test
 
 
     #- name: Publish Unit Test Results
