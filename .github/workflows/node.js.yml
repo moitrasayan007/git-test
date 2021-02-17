@@ -41,7 +41,7 @@ jobs:
     - name: Download file
       uses: actions/download-artifact@v1
       with:
-        name: test-results/test
+        name: test
 
 
     #- name: Publish Unit Test Results
